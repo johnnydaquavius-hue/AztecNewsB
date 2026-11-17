@@ -1,33 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aztec News</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
         }
 
-.wrapper {
-    text-align: center;
-}
+        .news-text {
+            font-size: 13px;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
 
-.button {
-    position: absolute;
-    top: 50%;
-}
-        
+        .wrapper {
+            margin-top: 150px; 
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
-
 <body>
 
-    <h1 style="text-align: center;">Aztec News!</h1>
-    <p style="text-align: center;">Latest news saved on here!</p>
-    <p style="font-size: 13px; text-align: center;">Suspect found for the death of girl, currently in jail</p>
+    <h1>Aztec News!</h1>
+    <p>Latest news saved on here!</p>
+    <p class="news-text">Suspect found for the death of girl, currently in jail</p>
+    
     <div class="wrapper">
-    <button class="button">Button</button>
+        <button class="button">Button</button>
     </div>
-
 
 </body>
 </html>
