@@ -12,18 +12,17 @@
             text-align: center;
         }
 
-        /* Container that puts headlines on the left and right */
         .headlines-container {
             display: flex;
             justify-content: space-between;
             max-width: 900px;
             margin: 30px auto;
             gap: 40px;
-            text-align: left; /* Overrides body's center alignment */
+            text-align: left;
         }
 
         .headline-column {
-            flex: 1; /* Makes left and right sides equal width */
+            flex: 1; 
         }
 
         .headline-column h2 {
@@ -49,7 +48,7 @@
             cursor: pointer;
         }
 
-        /* Stacks columns on small phone screens */
+
         @media (max-width: 600px) {
             .headlines-container {
                 flex-direction: column;
@@ -62,7 +61,6 @@
     <h1>Aztec News!</h1>
     <p>Latest news saved on here!</p>
 
-    <!-- Left and Right Headlines Area -->
     <div class="headlines-container">
         
         <!-- Left Side -->
@@ -70,13 +68,14 @@
             <h2>Breaking News</h2>
             <p class="news-text">Suspect found for the death of girl, currently in jail</p>
             <a href="https://aztecnews.ne-t.org/death.html">Click me to read more info about this topic!</a>
+            <img src="images/suicide.PNG" alt="girl's last message before suicide">
         </div>
 
         <!-- Right Side -->
         <div class="headline-column">
             <h2>Top Stories</h2>
-            <p class="news-text">Right-side headline appears across from the left</p>
-            <p class="news-text">Another right-side update goes here</p>
+            <p class="news-text">Nvidia CEO, Jensen Huang has resigned from Nvidia.</p>
+            <a href="https://aztecnews.ne-t.org/death.html">Click me to read more info about this topic!</a>
         </div>
 
     </div>
