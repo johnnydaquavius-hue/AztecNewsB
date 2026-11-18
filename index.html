@@ -12,21 +12,48 @@
             text-align: center;
         }
 
+        /* Container that puts headlines on the left and right */
+        .headlines-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 30px auto;
+            gap: 40px;
+            text-align: left; /* Overrides body's center alignment */
+        }
+
+        .headline-column {
+            flex: 1; /* Makes left and right sides equal width */
+        }
+
+        .headline-column h2 {
+            font-size: 18px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
         .news-text {
             font-size: 13px;
-            max-width: 600px;
-            margin: 0 auto;
             line-height: 1.5;
+            margin: 8px 0;
         }
 
         .wrapper {
-            margin-top: 0px; 
+            margin-top: 20px; 
         }
 
         .button {
-            padding: 1px 40px;
+            padding: 6px 40px;
             font-size: 16px;
             cursor: pointer;
+        }
+
+        /* Stacks columns on small phone screens */
+        @media (max-width: 600px) {
+            .headlines-container {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -34,7 +61,25 @@
 
     <h1>Aztec News!</h1>
     <p>Latest news saved on here!</p>
-    <p class="news-text">Suspect found for the death of girl, currently in jail</p>
+
+    <!-- Left and Right Headlines Area -->
+    <div class="headlines-container">
+        
+        <!-- Left Side -->
+        <div class="headline-column">
+            <h2>Breaking News</h2>
+            <p class="news-text">Suspect found for the death of girl, currently in jail</p>
+            <p class="news-text">Second left-side headline goes right here</p>
+        </div>
+
+        <!-- Right Side -->
+        <div class="headline-column">
+            <h2>Top Stories</h2>
+            <p class="news-text">Right-side headline appears across from the left</p>
+            <p class="news-text">Another right-side update goes here</p>
+        </div>
+
+    </div>
     
     <div class="wrapper">
         <button class="button">Button</button>
