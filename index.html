@@ -61,6 +61,11 @@
     <img src="images/affaadsffas.PNG" alt="Aztec News">
     <p>Latest news saved on here!</p>
 
+    <form onsubmit="window.open('https://gprivate.com/search/index.html?q=#gsc.q=' + encodeURIComponent(this.q.value), '_blank'); return false;">
+  <input type="text" name="q" placeholder="Search the web..." required>
+  <button type="submit">Search</button>
+</form>
+
     <div class="headlines-container">
         
         <!-- Left Side -->
@@ -81,10 +86,7 @@
 
     </div>
     
-<form onsubmit="window.open('https://gprivate.com/search/index.html?q=#gsc.q=' + encodeURIComponent(this.q.value), '_blank'); return false;">
-  <input type="text" name="q" placeholder="Search the web..." required>
-  <button type="submit">Search</button>
-</form>
+
 
 
 
