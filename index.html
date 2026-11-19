@@ -81,10 +81,11 @@
 
     </div>
     
-    <form action="https://gprivate.com/search/index.html?q=#gsc.q=" method="GET" target="_blank">
-      <input type="text" name="q" placeholder="Search Google..." required>
-      <button type="submit">Search</button>
-    </form>
+<form onsubmit="window.open('https://gprivate.com' + encodeURIComponent(this.q.value), '_blank'); return false;">
+  <input type="text" name="q" placeholder="Search the web..." required>
+  <button type="submit">Search</button>
+</form>
+
 
 
 </body>
